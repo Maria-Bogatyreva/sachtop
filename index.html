@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAKH.TOP - афиша мероприятий города</title>
+	<link href="//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl" rel="stylesheet" type="text/css"/>
+	<link href="css/min.normalize.css" rel="stylesheet">
+    <link href="css/min.style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main-header">
+			
+				<div class="wrapper-flex">
+					<a class="logo">
+						<img src="img/logo.svg" width="138" height="35" alt="Логотип SAKH.TOP">
+					</a>
+					<nav class="main-header-nav">				
+						<ul class="site-navigation">
+							<li class="site-navigation-item">
+								<a href="#">Каталог</a>
+							</li>
+							<li class="site-navigation-item">
+								<a href="#">Кино</a>
+							</li>
+							<li class="site-navigation-item">
+								<a href="#">Концерты</a>
+							</li>
+							<li class="site-navigation-item">
+								<a href="#">Выставки</a>
+							</li>
+							<li class="site-navigation-item">
+								<a href="#">Музеи</a>
+							</li>
+							<li class="site-navigation-item">
+								<a href="#">Еще</a>
+							</li>
+						</ul>				
+					</nav>
+					<form action="#" method="GET" class="search-form">
+						<input type="search" id="search" placeholder="События, артисты, места">
+						<button type="submit" aria-label="Поиск">
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0491 13.4633C10.7873 14.4274 9.21054 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 9.21054 14.4274 10.7873 13.4633 12.0491L16.9142 15.5858C17.3047 15.9763 17.3047 16.6095 16.9142 17C16.5237 17.3905 15.8905 17.3905 15.5 17L12.0491 13.4633ZM13 7.5C13 10.5376 10.5376 13 7.5 13C4.46243 13 2 10.5376 2 7.5C2 4.46243 4.46243 2 7.5 2C10.5376 2 13 4.46243 13 7.5Z" fill="#1F1F1F"/>
+							</svg>
+						</button>
+					</form>
+					<a class="choosen-link">
+						<span class="choosen-link-icon"></span>
+						<span class="choosen-link-label">0</span>				
+					</a>		
+					<a href="#" class="login">Войти</a>
+				</div>
+			
+		</header>
+	</div>
+
+	<main>
+		<h1 class="visually-hidden">SAKH.TOP - афиша мероприятий города</h1>
+		<section class="promo">			
+			<ul class="promo-list">
+				<li class="promo-item">
+					<a href="#">
+						<img src="img/promo-foto-1.jpg" alt="Ночь в Лувре: Леонардо да Винчи" width="1650" height="740">
+						<h2>Ночь в Лувре: Леонардо да Винчи</h2>
+						
+						<p class="promo-item-type">Концерт 16+</p>
+						<p class="promo-item-place">Arena Hall</p>
+						<p class="promo-item-date">30 ноября 2020, 21:00</p>
+					</a>
+				</li>
+				<li class="promo-item">
+					<a href="#">
+						<img src="img/promo-foto-2.jpg" alt="Ночь в Лувре: Леонардо да Винчи" width="1650" height="740">
+						<h2>Ночь в Лувре: Леонардо да  Винчи</h2>						
+						<p class="promo-item-type">Концерт 16+</p>
+						<p class="promo-item-place">Arena Hall</p>
+						<p class="promo-item-date">30 ноября 2020, 21:00</p>
+					</a>
+				</li>
+				<li class="promo-item">
+					<a href="#">
+						<img src="img/promo-foto-3.jpg" alt="Ночь в Лувре: Леонардо да Винчи" width="1650" height="740">
+						<h2>Ночь в Лувре: Леонардо да Винчи</h2>						
+						<p class="promo-item-type">Концерт 16+</p>
+						<p class="promo-item-place">Arena Hall</p>
+						<p class="promo-item-date">30 ноября 2020, 21:00</p>
+					</a>
+				</li>
+				<li class="promo-item">
+					<a href="#">
+						<img src="img/promo-foto-4.jpg" alt="Ночь в Лувре: Леонардо да Винчи" width="1650" height="740">
+						<h2>Ночь в Лувре: Леонардо да Винчи</h2>						
+						<p class="promo-item-type">Концерт 16+</p>
+						<p class="promo-item-place">Arena Hall</p>
+						<p class="promo-item-date">30 ноября 2020, 21:00</p>
+					</a>
+				</li>
+			</ul>			
+		</section>
+
+		<section class="filters">
+			<div class="wrapper">
+				<h2 class="visually-hidden">Фильтрация мероприятий</h2>
+				<form action="#" method="GET" class="event-filters">
+					<select name="date" id="date" class="filter-date">
+						<option value="none" hidden="">Дата</option>
+						<option value="today">Сегодня</option>
+						<option value="tomorrow">Завтра</option>
+					</select><!--				
+					--><select name="categories" id="categories" class="filter-categories">
+						<option value="none" hidden="">Категории</option>
+						<option value="movies">Кино</option>
+						<option value="concerts">Концерты</option>
+					</select><!--
+					--><select name="platform" id="platform" class="filter-platform">
+						<option value="none" hidden="">Площадки</option>
+						<option value="arena-hall">Arena Hall</option>
+						<option value="crocus-city-hall">Crocus City Hall</option>
+					</select><!--
+					--><select name="age" id="age" class="filters-age">
+						<option value="none" hidden="">Возраст</option>
+						<option value="arena-hall">12+</option>
+						<option value="crocus-city-hall">16+</option>
+					</select><!--
+					--><select name="tags" id="tags" class="filters-tags">
+						<option value="none" hidden="">Тэги</option>
+						<option value="arena-hall">Классика</option>
+						<option value="crocus-city-hall">Нуар</option>
+					</select>
+				</form>	
+			</div>		
+		</section>
+
+		<section class="movies">
+			<div class="wrapper">
+				<h2 class="content-heading">В кино</h2>
+				<a href="#" class="more-link">Все сеансы ></a>
+				<div class="clearfix"></div>
+				<hr>
+
+				<div class="slider">
+					<ul class="slider__wrapper">
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/film-img-1.jpg" alt="Афера по-голливудски" width="370" height="370">
+								<h3 class="gallery-item-heading">Афера по-голливудски</h3>
+								<p class="gallery-item-description">Боевик, комедия</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-rating">6.2</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/film-img-2.jpg" alt="Взаперти" width="370" height="370">
+								<h3 class="gallery-item-heading">Взаперти</h3>
+								<p class="gallery-item-description">Триллер, драма, детектив</p>					
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-rating">7.5</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/film-img-3.jpg" alt="Еще по одной" width="370" height="370">
+								<h3 class="gallery-item-heading">Еще по одной</h3>
+								<p class="gallery-item-description">Драма, комедия</p>						
+								<span class="gallery-item-age">12+</span>
+								<span class="gallery-item-rating">6.1</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/film-img-4.jpg" alt="Довод" width="370" height="370">
+								<h3 class="gallery-item-heading">Довод</h3>
+								<p class="gallery-item-description">Фантастика, боевик</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-rating">7.8</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/film-img-4.jpg" alt="Довод" width="370" height="370">
+								<h3 class="gallery-item-heading">Довод</h3>
+								<p class="gallery-item-description">Фантастика, боевик</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-rating">7.8</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/film-img-4.jpg" alt="Довод" width="370" height="370">
+								<h3 class="gallery-item-heading">Довод</h3>
+								<p class="gallery-item-description">Фантастика, боевик</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-rating">7.8</span>
+							</a>
+						</li>
+					</ul>
+					<a class="slider__control slider__control_left" href="#" role="button"></a>
+					<a class="slider__control slider__control_right" href="#" role="button"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="concerts">
+			<div class="wrapper">
+				<h2 class="content-heading">Концерты</h2>
+				<a href="#" class="more-link">Все концерты  ></a>
+				<div class="clearfix"></div>
+				<hr>
+
+				<div class="slider">
+					<ul class="slider__wrapper">
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/concert-img-1.jpg" alt="Каста" width="370" height="370">
+								<h3 class="gallery-item-heading">Каста</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">16 января 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 1 500 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/concert-img-2.jpg" alt="Evanescence" width="370" height="370">
+								<h3 class="gallery-item-heading">Evanescence</h3>
+								<p class="gallery-item-description">Aura</p>
+								<p class="gallery-item-description">25 марта 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 3 000 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/concert-img-3.jpg" alt="Баста" width="370" height="370">
+								<h3 class="gallery-item-heading">Баста</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">17 апреля 2021, 20:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 800 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/concert-img-4.jpg" alt="Каста" width="370" height="370">
+								<h3 class="gallery-item-heading">Three days grace</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">19 апреля 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 2 500 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/concert-img-4.jpg" alt="Каста" width="370" height="370">
+								<h3 class="gallery-item-heading">Three days grace</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">19 апреля 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 2 500 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/concert-img-4.jpg" alt="Каста" width="370" height="370">
+								<h3 class="gallery-item-heading">Three days grace</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">19 апреля 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 2 500 ₽</span>
+							</a>
+						</li>
+					</ul>
+					<a class="slider__control slider__control_left" href="#" role="button"></a>
+					<a class="slider__control slider__control_right" href="#" role="button"></a>
+				</div>				
+			</div>
+
+			<div class="wrapper">
+				<div class="concert-promo-item">
+						<h2>Первый концерт Shortparis <br>в Южно-Сахалинске</h2>
+						<img src="img/concert-img-promo.jpg" width="1540" height="600" alt="Первый концерт Shortparis в Южно-Сахалинске">
+						<p class="concert-promo-item-type">Концерт 16+</p>
+						<p class="concert-promo-item-place">Arena Hall</p>
+						<p class="concert-promo-item-date">30 ноября 2020, 21:00</p>
+						
+				</div>
+			</div>
+		</section>
+
+		<section class="shows">
+			<div class="wrapper">
+				<h2 class="content-heading">Выставки</h2>
+				<a href="#" class="more-link">Все выставки ></a>
+				<div class="clearfix"></div>
+				<hr>
+
+				<div class="slider">
+					<ul class="slider__wrapper">
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/shows-img-1.jpg" alt="Загалка Рафаэля" width="370" height="370">
+								<h3 class="gallery-item-heading">Загалка Рафаэля</h3>
+								<p class="gallery-item-description">TheatreHD</p>
+								<p class="gallery-item-description">с 9 декабря 2020</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">Бесплатно</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/shows-img-2.jpg" alt="Ночь в Лувре: Леонардо да Винчи" width="370" height="370">
+								<h3 class="gallery-item-heading">Ночь в Лувре: Леонардо да <br>Винчи</h3>
+								<p class="gallery-item-description">Aura</p>
+								<p class="gallery-item-description">с 12 декабря 2020</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 400 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/shows-img-3.jpg" alt="Микеланджело: Любовь и смерть" width="370" height="370">
+								<h3 class="gallery-item-heading">Микеланджело: Любовь <br> и смерть</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">17 апреля 2021, 20:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 300 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/shows-img-4.jpg" alt="Я, Клод Моне" width="370" height="370">
+								<h3 class="gallery-item-heading">Я, Клод Моне</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">19 апреля 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 400 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/shows-img-4.jpg" alt="Я, Клод Моне" width="370" height="370">
+								<h3 class="gallery-item-heading">Я, Клод Моне</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">19 апреля 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 2 500 ₽</span>
+							</a>
+						</li>
+						<li class="slider__item">
+							<a href="#">
+								<img src="img/shows-img-4.jpg" alt="Я, Клод Моне" width="370" height="370">
+								<h3 class="gallery-item-heading">Я, Клод Моне</h3>
+								<p class="gallery-item-description">Event Hall</p>
+								<p class="gallery-item-description">19 апреля 2021, 19:00</p>						
+								<span class="gallery-item-age">16+</span>
+								<span class="gallery-item-price">от 2 500 ₽</span>
+							</a>
+						</li>
+					</ul>
+					<a class="slider__control slider__control_left" href="#" role="button"></a>
+					<a class="slider__control slider__control_right" href="#" role="button"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="redaction">
+			<div class="wrapper">
+				<h2 class="content-heading">Редакция</h2>
+				<a href="#" class="more-link">Смотреть все  ></a>
+				<div class="clearfix"></div>
+				<hr>
+				<ul class="redaction-list">
+					<li class="redaction-item">
+						<a href="#">							
+							<img src="img/redaction-img-1.jpg" width="760" height="370" alt="Sakhtop рекомендует детские события">
+							<h3 class="redaction-item-heading">Sakhtop рекомендует детские события</h3>
+						</a>
+					</li>
+					<li class="redaction-item">
+						<a href="#">							
+							<img src="img/redaction-img-2.jpg" width="760" height="370" alt="Ожидаемые концерты классической музыки в Южно-Сахалинске">
+							<h3 class="redaction-item-heading">Ожидаемые концерты классической <br>музыки в Южно-Сахалинске</h3>
+						</a>
+					</li>
+					<li class="redaction-item">
+						<a href="#">
+							<img src="img/redaction-img-3.jpg" width="760" height="370" alt="Лучшие выставки по мнению зрителей">
+							<h3 class="redaction-item-heading">Лучшие выставки по мнению <br> зрителей</h3>
+						</a>
+					</li>
+					<li class="redaction-item">
+						<a href="#">							
+							<img src="img/redaction-img-4.jpg" width="760" height="370" alt="Когда хочется немного рока">
+							<h3 class="redaction-item-heading">Когда хочется немного рока</h3>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="advertisement">
+			<div class="wrapper">
+				<h2 class="visually-hidden">Реклама</h2>
+				<ul class="advertisement-list">
+					<li class="advertisement-item">
+						<img src="img/advertisement-img-1.jpg" width="300" height="180" alt="Конструктор худи онлайн">
+						<h4>Конструктор худи онлайн</h4>
+						<a href="#">Узнать больше</a>						
+					</li>
+					<li class="advertisement-item">
+						<img src="img/advertisement-img-2.jpg" width="300" height="180" alt="Обучение рисованию с нуля">
+						<h4>Обучение рисованию с нуля</h4>
+						<a href="#">Узнать больше</a>						
+					</li>
+					<li class="advertisement-item">
+						<img src="img/advertisement-img-3.jpg" width="300" height="180" alt="щем доставщика продуктов">
+						<h4>Ищем доставщика продуктов</h4>
+						<a href="#">Узнать больше</a>						
+					</li>
+					<li class="advertisement-item">
+						<img src="img/advertisement-img-4.jpg" width="300" height="180" alt="Профессия Motion-дизайнер">
+						<h4>Профессия <br>Motion-дизайнер</h4>
+						<a href="#">Узнать больше</a>						
+					</li>
+					<li class="advertisement-item">
+						<img src="img/advertisement-img-5.jpg" width="300" height="180" alt="Дизайнер интерьеров за 1 неделю">
+						<h4>Дизайнер интерьеров за 1 неделю</h4>
+						<a href="#">Узнать больше</a>								
+					</li>				
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="wrapper">
+
+			<div class="footer-navigation">
+				<a class="footer-logo">
+					<img src="img/footer-logo.png" alt="Логотип SAKH.TOP" width="146" height="40">
+				</a>
+				<ul class="footer-nav">
+					<li class="footer-nav-item">
+						<a href="">Статьи</a></li>
+					<li class="footer-nav-item">
+						<a href="">О проекте</a></li>
+					<li class="footer-nav-item">
+						<a href="">Помощь</a></li>
+					<li class="footer-nav-item">
+						<a href="">Условия и правила</a></li>
+				</ul>
+				<ul class="footer-advertisement-list">
+					<li class="footer-nav-item">
+						<a href="">Партнёрам и организаторам мероприятия</a></li>
+					<li class="footer-nav-item">
+						<a href="">Реклама</a></li>
+				</ul>
+
+				<div class="social-list">					
+						<a href="#" class="social-btn">
+							<span class="visually-hidden">ВКонтакте</span>
+							<svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.176 0.4L4.16 12H6.112L10.048 0.4H8.336L5.184 10.32L1.968 0.4H0.176ZM13.2111 0.4H11.5791V12H13.2111V8.352L15.0351 6.336L19.0191 12H20.9711L16.1391 5.136L20.4751 0.4H18.4431L13.2111 6.24V0.4Z" fill="#1F1F1F"/>
+							</svg>
+						</a>					
+						<a href="#" class="social-btn">
+							<span class="visually-hidden">Facebook</span>
+							<svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.376 12H2.008V6.736H7.576V5.328H2.008V1.808H7.912V0.4H0.376V12ZM9.32913 12H13.9051C16.2251 12 18.0651 11.04 18.0651 8.576C18.0651 7.152 17.4091 6.288 16.3051 5.824C17.1211 5.36 17.5851 4.368 17.5851 3.264C17.5851 0.959999 15.6651 0.4 13.5051 0.4H9.32913V12ZM10.9611 6.656H13.8251C15.5691 6.656 16.3851 7.232 16.3851 8.592C16.3851 9.92 15.5851 10.624 13.9211 10.624H10.9611V6.656ZM10.9611 1.776H13.7611C15.0571 1.776 15.9371 2.288 15.9371 3.488C15.9371 4.848 15.1051 5.36 13.7611 5.36H10.9611V1.776Z" fill="#1F1F1F"/></svg>
+						</a>					
+						<a href="#" class="social-btn">
+							<span class="visually-hidden">Instagram</span>
+							<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.008 0.4H0.376V12H2.008V0.4ZM14.0946 12V0.4H12.4626V10.272L7.16663 0.4H4.76663V12H6.39863V2.096L11.7106 12H14.0946Z" fill="#1F1F1F"/>
+							</svg>
+						</a>					
+						<a href="#" class="social-btn">
+							<span class="visually-hidden">Telegram</span>
+							<svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.776 12H5.408V1.808H9.184V0.4H0V1.808H3.776V12ZM14.7861 0.191999C11.5221 0.191999 9.39413 2.592 9.39413 6.176C9.39413 9.696 11.3141 12.208 14.6421 12.208C16.1941 12.208 17.5541 11.744 18.3061 10.544L18.3861 12H19.6661V6.08H15.0581V7.488H18.1301V7.792C18.1301 10.192 16.2421 10.832 14.7061 10.832C12.5781 10.832 11.0581 9.12 11.0581 6.176C11.0581 3.168 12.6581 1.568 14.7061 1.568C16.5621 1.568 17.6181 2.48 18.0021 3.776H19.5861C19.1061 1.536 17.1861 0.191999 14.7861 0.191999Z" fill="#1F1F1F"/>
+							</svg>
+						</a>					
+				</div>
+			</div>
+			<div class="footer-contacts">
+				<span class="copyright">© 2020 ООО «САХТОП»</span>
+				<a href="mailto:sakhtop@sakh.ru" class="mail">sakhtop@sakh.ru</a>
+				<a href="tel:84242991090" class="tel">+7 (4242) 991-090</a>				
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</footer>
+<script src="js/min.script.js"></script>
+</body>
+</html>
